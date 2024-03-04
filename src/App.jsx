@@ -10,7 +10,6 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (inputText.trim() !== '') {
-      console.log(inputText.trim())
       setTasks([...tasks, {id:Date.now(),name:inputText}])
       setInputText('')
       setError('')
